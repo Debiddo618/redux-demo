@@ -1,2 +1,4 @@
 # Redux
-npm install redux# redux-demo
+npm install redux
+
+![redux](redux.png)
