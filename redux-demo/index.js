@@ -95,6 +95,13 @@ const iceCreamreducer = (state = initialIceCreamState, action) => {
         numsOfIceCream: state.numsOfIceCream + action.payload,
       };
     }
+    // this works for redux, but not redux-toolkit
+    case CAKE_ORDERED: {
+      return {
+        ...state,
+        numsOfIceCream: state.numsOfIceCream - 1,
+      };
+    }
     default:
       return state;
   }
